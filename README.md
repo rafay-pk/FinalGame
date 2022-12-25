@@ -5,7 +5,7 @@ This repository contains all the unity source files of the final game.
 
 
 GamePLay
-https://madeasia.github.io/FinalGameUpdated/
+https://madeasia.github.io/Game-Play/
 
 Game Files:
 https://github.com/MadeAsia/FinalGame
