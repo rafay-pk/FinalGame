@@ -18,6 +18,7 @@ public class PatrolBehavior : StateMachineBehaviour
        Transform wayPointsObject=GameObject.FindGameObjectWithTag("WayPoints").transform;
         
         foreach(Transform t in wayPointsObject)
+            
     
         wayPoints.Add(t);
         

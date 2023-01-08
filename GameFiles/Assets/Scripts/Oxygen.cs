@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,10 @@ public class Oxygen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        slider = FindObjectsOfType<Slider>().ToList().Find(x => x.CompareTag("Oxygen"));
+
+        if (SceneSwitch.Instance.difficulty >= 2)
+            oxygenDecreas = 0.07f;
         oxygenRemaining=maxOxygen;
         
       

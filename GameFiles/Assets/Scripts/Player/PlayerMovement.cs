@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
+        if (SceneSwitch.Instance.difficulty >= 1)
+            HealthDamage = 30f;
         jump=new InputAction("Jump",binding:"<Keyboard>/space");
         jump.AddBinding("<Gamepad>/a");
 
